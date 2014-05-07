@@ -1,11 +1,10 @@
 Iis::Application.routes.draw do
-  get "profiles/index"
-
   root :to => 'dashboards#index'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
   resources :dashboards, :only => :index
+  resources :profiles, :only => :index
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
