@@ -1,4 +1,6 @@
 Iis::Application.routes.draw do
+  get "profiles/index"
+
   root :to => 'dashboards#index'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

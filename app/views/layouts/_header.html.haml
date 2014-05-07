@@ -6,25 +6,36 @@
     %ul.nav.navbar-nav
       %li
         %a{href: "/"} Dashboard
-      %li
-        %a{href: "#"} Employees & Skills
-      %li
-        %a{href: "#"} Leave & Attendence
       %li.dropdown
         %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
-          Dropdown
+          Employees & Skills
           %b.caret
         %ul.dropdown-menu
           %li
-            %a{href: "#"} Action
+            %i.fa.fa-info
+              %a{href: "#"}
+              My Info
           %li
-            %a{href: "#"} Another action
+            %i.fa.fa-smile-o
+              %a{href: "#"}
+              Birthday
           %li
-            %a{href: "#"} Something else here
+            %i.fa.fa-search
+              %a{href: "#"}
+              Employee directory
+      %li.dropdown
+        %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+          Leave & Attendence
+          %b.caret
+        %ul.dropdown-menu
           %li
-            %a{href: "#"} Separated link
+            %i.fa.fa-adjust
+              %a{href: "#"}
+              Leave
           %li
-            %a{href: "#"} One more separated link
+            %i.fa.fa-bars
+              %a{href: "#"}
+              Attendence
     %ul.nav.navbar-nav.navbar-right
       - if user_signed_in?
         %li
