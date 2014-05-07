@@ -1,2 +1,267 @@
-%h1 Profiles#index
-%p Find me in app/views/profiles/index.html.haml
+%body
+  #page-top-outer
+    #page-top
+      #logo
+        %a{href: ""}
+          %img{alt: "", height: "40", src: "logo.png", width: "156"}/
+      #top-search
+        %table{border: "0", cellpadding: "0", cellspacing: "0"}
+          %tbody
+            %tr
+              %td
+                .whitebig User
+  #content-outer
+    #content
+      #page-heading
+      :css
+        td { font-size: 11px;height: 30 }
+        .smalltd { font-size: 11px;height: 20 }
+        .smalltd td { font-size: 11px;height: 20 }
+      :css
+        .all_users
+        {
+        	color: #666;
+        	/*line-height: 2.4em;*/
+        	line-height:18px;	
+        /*	margin: 0px;
+        	width: 350px;
+        	float:left;
+        	overflow:auto; */
+        }
+        .all_users .innertxt
+        {
+        	font-size: 0.8em;
+        	color:#666666;
+        	display:inherit;
+        	padding-bottom:25px;
+        }
+        .all_users .innertxt img
+        {
+        	float:left;
+        	border: solid 1px #cccccc;
+        	margin:5px 5px 5px 0;
+        }
+        .all_users .innertxt strong
+        {
+        	color:#666666;
+        	font-size:11px;
+        	font-weight:bold;
+        	line-height:12px;	
+        }
+        .all_users .innertxt li
+        {
+        	color:#666666;
+        	font-size:11px;
+        	font-weight:normal;
+        	/*margin:-15px 0 -15px 0;	*/
+        	text-align:left;
+        	list-style-type:none;
+        	line-height:14px;
+        }	
+        
+        .shorttext li
+        {
+        	color:#666666;
+        	font-size:11px;
+        	/*margin:-15px 0 -15px 0;	*/
+        	text-align:left;
+        	list-style-type:none;
+        }
+        .styletd
+        {height:auto !important;}
+      %table#content-table{border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+        %tbody
+          %tr
+            %th.sized{rowspan: "3"}
+              %img{alt: "", height: "300", src: "side_shadowleft.jpg", width: "20"}/
+            %th.topleft
+            %td#tbl-border-top
+            %th.topright
+            %th.sized{rowspan: "3"}
+              %img{alt: "", height: "300", src: "side_shadowright.jpg", width: "20"}/
+          %tr
+            %td#tbl-border-left
+            %td{valign: "top"}
+              %table{border: "0", width: "100%"}
+                %tbody
+                  %tr
+                    %td{valign: "top", width: "100%"}
+                      %table{border: "0", width: "100%"}
+                        %tbody
+                          %tr
+                            %td{valign: "top", width: "25%"}
+                              %table#product-table{border: "0", cellpadding: "0", cellspacing: "0", width: "98%"}
+                                %tbody
+                                  %tr
+                                    %td.styletd{width: "100%"}
+                                      .headstyletd Official Info
+                                  %tr
+                                    %td{valign: "top", width: "100%"}
+                                      .all_users
+                                        #user1.innertxt{style: "width: 249; height: 105", userid: "1"}
+                                          %img{height: "90", src: "img805.jpg", width: "90"}/
+                                          %strong User123
+                                          %ul
+                                            %li User ID: IIS
+                                            %li Email: test@test.com
+                                            %li Designation: Developer
+                                            %li Department: PHP Development
+                                            %li
+                                              DOJ:
+                                              1 Jan 2013
+                                  %tr.alternate-row
+                                    %td
+                                      %p
+                                        %strong Notice Period :
+                                        30 Working Days
+                                      %p
+                                        %strong Commitment Period :
+                                        24 Months, till
+                                        %b
+                                          %i 1 Jan 2015
+                                      %br/
+                                      %p
+                                        %strong PAN No :
+                                        AFSDG1434
+                                      %p
+                                        %strong PF No :
+                                        \-
+                                      %p
+                                        %strong ESI No :
+                                        \-
+                                      %p
+                                        %strong Bank Account No :
+                                        2445454255524
+                                      %br/
+                                      %p Exp at DOJ:  0 Year 6 Months
+                                      %p
+                                        %strong Exp in IIS :
+                                        1 Year 0 Months
+                                      %p
+                                        Total Exp(
+                                        %strong> IIS EVE
+                                        ) :
+                                        %b 1 Year 6 Months
+                                      %br/
+                                      %p
+                                        %strong> Scheduled Increment:
+                                        as per commitment/bond/cycle, Intermediate Increment can be happen anytime (if applicable):
+                                        %font{color: "red"} Nov 2014
+                            %td{valign: "top", width: "75%"}
+                              / Personal Info
+                              %table#product-table{border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+                                %tbody
+                                  %tr.alternate-row
+                                    %td{height: "18", width: "16%"}
+                                      %b Father's Name
+                                    %td{height: "18", width: "17.3%"}
+                                      ABCD
+                                    %td{height: "18", width: "16%"}
+                                      %b Mother's Name
+                                    %td{height: "18", width: "17.3%"}
+                                      HHGHGHH
+                                    %td{height: "30", width: "16%"}
+                                      %b Date Of Birth
+                                    %td{height: "30", width: "17.3%"}
+                                      May 5, 1990
+                                  %tr
+                                    %td{height: "18", width: "16%"}
+                                      %b Current Address
+                                    %td{height: "18", width: "17.3%"}
+                                      45-A.
+                                    %td{height: "18", width: "16%"}
+                                      %b Permanent Address
+                                    %td{height: "18", width: "17.3%"}
+                                      GTHYGTHGT
+                                    %td{height: "18", width: "16%"}
+                                      %b Gender
+                                    %td{height: "18", width: "17.3%"}
+                                      Male
+                                  %tr.alternate-row
+                                    %td{height: "18", width: "16%"}
+                                      %b Contact Number
+                                    %td{height: "18", width: "17.3%"}
+                                      1234567890
+                                    %td{height: "18", width: "16%"}
+                                      %b Mobile No1
+                                    %td{height: "18", width: "17.3%"}
+                                      1234567890
+                                    %td{height: "18", width: "16%"}
+                                      %b Mobile No2
+                                    %td{height: "18", width: "17.3%"}
+                                      1234567890
+                                  %tr
+                                    %td{height: "30", width: "16%"}
+                                      %b Email address (Personal)
+                                    %td{height: "30", width: "17.3%"}
+                                      test@test.com
+                                    %td{height: "30", width: "16%"}
+                                      %b Blood Group
+                                    %td{height: "30", width: "17.3%"}
+                                      AB
+                                    %td{height: "30", width: "16%"}
+                                    %td{height: "30", width: "17.3%"}
+                                  %tr.alternate-row
+                                    %td{width: "16%"}
+                                      %b Highest Education
+                                      %font{color: "#FF0000"} *
+                                    %td{width: "17.3%"}
+                                      MCA/BE
+                                    %td{width: "16%"}
+                                      %b 2ndHighest Education
+                                      %font{color: "#FF0000"} *
+                                    %td{width: "17.3%"}
+                                      B.Sc.
+                                    %td{width: "16%"}
+                                      %b Language Known
+                                      %font{color: "#FF0000"} *
+                                    %td{width: "17.3%"}
+                                      Hindi, English
+                                  %tr
+                                    %td{width: "16%"}
+                                      %b Primary Skills
+                                    %td{width: "17.3%"}
+                                      ROR, PHP
+                                    %td{width: "16%"}
+                                      %b Secondary Skills
+                                    %td{width: "17.3%"}
+                                      JAVA
+                                    %td{width: "16%"}
+                                      %b
+                                    %td{width: "17.3%"}
+                                  %tr.alternate-row
+                                    %td{height: "30", width: "16%"}
+                                      %b Marital Status
+                                    %td{height: "30", width: "17.3%"}
+                                      Single
+                                    %td{height: "30", width: "16%"}
+                                      %b Spouse Name
+                                    %td{height: "30", width: "17.3%"}
+                                    %td{height: "30", width: "16%"}
+                                      %b Date Of Aniversary
+                                    %td{height: "30", width: "17.3%"}
+                                  %tr
+                                    %td{height: "30", width: "16%"}
+                                      %b Passport Number
+                                    %td{height: "30", width: "17.3%"}
+                                      GHGHGHGHGHH
+                                    %td{height: "30", width: "16%"}
+                                      %b Valid From
+                                    %td{height: "30", width: "17.3%"}
+                                      1/9/2013
+                                    %td{height: "30", width: "16%"}
+                                      %b Valid TO
+                                    %td{height: "30", width: "17.3%"}
+                                      1/8/2023
+                                  
+                              %b Note:If your information is incomplete or incorrect please consult concern department with no delay
+              .clear
+              / end content-table-inner
+            %td#tbl-border-right
+          %tr
+            %th.sized.bottomleft
+            %td#tbl-border-bottom  
+            %th.sized.bottomright
+      .clear  
+    .clear  
+  .clear
