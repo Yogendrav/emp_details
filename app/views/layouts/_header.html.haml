@@ -1,0 +1,43 @@
+.container
+  .navbar-header
+    %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+      %span.icon-toggle
+  .navbar-collapse.collapse
+    %ul.nav.navbar-nav
+      %li
+        %a{href: "/"} Dashboard
+      %li
+        %a{href: "#"} Employees & Skills
+      %li
+        %a{href: "#"} Leave & Attendence
+      %li.dropdown
+        %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+          Dropdown
+          %b.caret
+        %ul.dropdown-menu
+          %li
+            %a{href: "#"} Action
+          %li
+            %a{href: "#"} Another action
+          %li
+            %a{href: "#"} Something else here
+          %li
+            %a{href: "#"} Separated link
+          %li
+            %a{href: "#"} One more separated link
+    %ul.nav.navbar-nav.navbar-right
+      - if user_signed_in?
+        %li
+          = link_to destroy_user_session_path, :method => :delete do
+            %i.fa.fa-sign-out
+            Log Out
+      - else
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#", role: "button"}
+            = link_to new_user_session_path do
+              %i.fa.fa-user
+              Login
+          %ul#g-account-menu.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} My Profile
+  / /container
