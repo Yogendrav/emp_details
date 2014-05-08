@@ -1,0 +1,90 @@
+#nav {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 100%;
+    margin: 0;
+    padding: 5px 6px 0;
+}
+#nav li {
+    float: left;
+    list-style: none outside none;
+    margin: 0 2px;
+    padding: 0 0 8px;
+    position: relative;
+}
+#nav a {
+    color: #E7E5E5;
+    display: block;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+#nav a:hover {
+    background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+}
+#nav .current a, #nav li:hover > a {
+    /*background: url("img/gradient.png") repeat-x scroll 0 -40px #666666;*/
+    color: #FFFFFF;
+}
+#nav ul li:hover a, #nav li:hover li a {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #666666;
+}
+#nav ul a:hover {
+    background: url("img/gradient.png") repeat-x scroll 0 -100px #393939 !important;
+    color: #FFFFFF !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+#nav li:hover > ul {
+    display: block;
+}
+#nav ul {
+    background: url("img/gradient.png") repeat-x scroll 0 0 #DDDDDD;
+    border: 1px solid #B4B4B4;
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 35px;
+    width: 220px;
+    z-index: 1000;
+}
+#nav ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+#nav ul a {
+    font-weight: normal;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#nav ul ul {
+    left: 218px;
+    top: -3px;
+}
+#nav ul li:first-child > a {
+}
+#nav ul li:last-child > a {
+}
+#nav:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+#nav {
+    display: inline-block;
+}
+html[xmlns] #nav {
+    display: block;
+}
+* html #nav {
+    height: 1%;
+}
