@@ -24,6 +24,8 @@ gem 'haml-rails'
 gem 'devise'
 gem 'activeadmin'
 gem "font-awesome-rails"
+gem 'carrierwave'
+gem 'jquery_datepicker'
 
 group :development, :test do
   gem 'rspec-rails'
