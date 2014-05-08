@@ -1,3 +1,16 @@
-- @users.each do |user|
-  = user.emp_name
-  = user.dob
+.container.birthday_view
+  %table.table-bordered.table-striped.table-condensed
+    %thead
+      %tr{style: "border-bottom: 1px solid rgb(51, 51, 51);"}
+        %th Emp Name
+        %th Birthday
+        %th Department
+    - @users.each do |user|
+      %tbody
+        %tr
+          %td
+            = user.emp_name
+          %td
+            = user.dob.strftime("%d %b")
+          %td
+            = user.department

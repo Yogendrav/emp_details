@@ -9,9 +9,11 @@
 }
 
 #footer {
-  height: 60px;
-  color: #A8A7A8;
   background-color: #333333;
+  bottom: 0;
+  color: #A8A7A8;
+  position: fixed;
+  width: 100%;
 }
 
 @media (max-width: 767px) {
