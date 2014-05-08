@@ -38,6 +38,9 @@ class Profile < ActiveRecord::Base
                   :emp_name,
                   :image_cache
   mount_uploader :image, ImageUploader
+
+  belongs_to :user
+
   DESIGNATION = %w(Fresher Trainee Jr.Developer Developer Sr.Developer Designer Sr.Designer)
   DEPARTMENT = %w(RoR Mobile Designing Php)
   GENDER = %w(Male Female)

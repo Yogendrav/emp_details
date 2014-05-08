@@ -16,8 +16,8 @@
               %i.fa.fa-info
               My Info
           %li
-            %i.fa.fa-smile-o
-              %a{href: "#"}
+            = link_to user_birthday_profiles_path(@user) do
+              %i.fa.fa-smile-o
               Birthday
           %li
             %i.fa.fa-search

@@ -6,9 +6,6 @@ ActiveAdmin.register Profile do
     column :emp_id
     column :email
     column :designation
-    # column :designation do |d|
-    #   Profile::DESIGNATION.designation
-    # end
     column :department
     column :date_of_join
     column :notice_period

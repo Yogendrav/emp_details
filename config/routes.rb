@@ -4,7 +4,12 @@ Iis::Application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users
   resources :dashboards, :only => :index
-  resources :profiles, :only => :index
+  resources :profiles do
+    collection do
+      get "index"
+      get "user_birthday"
+    end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
