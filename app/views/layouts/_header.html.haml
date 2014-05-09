@@ -46,9 +46,8 @@
               %i.fa.fa-sign-out
               Log Out
       - else
-        %ul.nav.navbar-nav
-          %li.dropdown
-            %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#", role: "button"}
-              = link_to new_user_session_path do
-                %i.fa.fa-user
-                Login
+        %ul.nav.navbar-nav.pull-right
+          %li
+            = link_to new_user_session_path do
+              %i.fa.fa-user
+              Login
